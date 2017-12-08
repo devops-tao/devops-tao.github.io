@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://chomd.club/"/>
-  <updated>2017-11-12T09:24:30.783Z</updated>
+  <updated>2017-12-08T09:58:25.388Z</updated>
   <id>http://chomd.club/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://chomd.club/2017/11/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <id>http://chomd.club/2017/11/12/我的第一篇博客/</id>
     <published>2017-11-12T09:18:06.000Z</published>
-    <updated>2017-11-12T09:24:30.783Z</updated>
+    <updated>2017-12-08T09:58:25.388Z</updated>
     
     <content type="html"><![CDATA[<p>使用github pages服务搭建博客的好处有：</p><p>1、全是静态文件，访问速度快；</p><p>2、免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</p><p>3、可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</p><p>4、数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</p><p>5、博客内容可以轻松打包、转移、发布到其它平台；</p><p>6、等等；</p>]]></content>
     
@@ -37,6 +37,8 @@
     
     </summary>
     
+    
+      <category term="其它" scheme="http://chomd.club/tags/%E5%85%B6%E5%AE%83/"/>
     
   </entry>
   
