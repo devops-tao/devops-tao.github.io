@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="Linux," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -83,42 +83,18 @@
 
 
 
-<meta name="description" content="安装CentOS6.8操作系统的过程加载完CentOS6.8的ISO镜像文件后，开启/重启计算机或虚拟机，此时系统会进行自检，自检完毕后就会出现如图1-1所示的安装操作系统时的引导界面。  图1-1提示：如果是在虚拟机上安装CentOS系统，需要进入虚拟机界面操作，如果需要退出虚拟机界面，可按快捷组合键Ctrl+Alt。  选择系统引导方式在图1-1所示的引导界面中，可以看到共有五种引导方式，其中">
-<meta name="keywords" content="Linux">
+<meta name="description" content="线性结构 线性结构 可迭代 for … in 可用len()获取长度 可以通过下标访问 可以切片   学过的线性结构 列表、元组、字符串、bytes、bytearray  切片 切片 通过索引区间访问线性结构的一段数据 sequence[start,stop]区间的子序列 支持负索引 start为0，可以省略 stop为末尾，可以省略 超过上界（有边界），就取到末尾；超过下界（左边界），取到开头">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CentOS6.8最小化安装">
-<meta property="og:url" content="http://chomd.club/2017/12/08/CentOS6.8最小化安装/index.html">
+<meta property="og:title" content="Python相关知识点（一）">
+<meta property="og:url" content="http://chomd.club/2019/05/16/Python相关知识点（一）/index.html">
 <meta property="og:site_name" content="Linux修行路">
-<meta property="og:description" content="安装CentOS6.8操作系统的过程加载完CentOS6.8的ISO镜像文件后，开启/重启计算机或虚拟机，此时系统会进行自检，自检完毕后就会出现如图1-1所示的安装操作系统时的引导界面。  图1-1提示：如果是在虚拟机上安装CentOS系统，需要进入虚拟机界面操作，如果需要退出虚拟机界面，可按快捷组合键Ctrl+Alt。  选择系统引导方式在图1-1所示的引导界面中，可以看到共有五种引导方式，其中">
+<meta property="og:description" content="线性结构 线性结构 可迭代 for … in 可用len()获取长度 可以通过下标访问 可以切片   学过的线性结构 列表、元组、字符串、bytes、bytearray  切片 切片 通过索引区间访问线性结构的一段数据 sequence[start,stop]区间的子序列 支持负索引 start为0，可以省略 stop为末尾，可以省略 超过上界（有边界），就取到末尾；超过下界（左边界），取到开头">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr7vuicxj20hu0dbqeg.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9iafg7j20m60ggglo.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9lkxeij20mb0gi43c.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9kekt2j20m50ge0u1.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9j34r2j20m70gigmq.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9j1hq3j20m50gfmy1.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9j1zyoj20j809y3zb.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9k9rakj20mb0gmt9f.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9n3ju1j20m50ge76m.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9marluj20m405lgm6.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9mdbawj209d03x74c.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9myaq1j20m60gk0uh.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9mxexsj20m90gkdgq.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9nngsrj20990a53z1.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9njahsj20e10cvq3m.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9nl3ujj20e40cq3za.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9o93v8j20e30ctwf6.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9oaa6qj20m40ghjsd.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9pfa0jj20ma0gmabf.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9orwjpj20lx0ghdh5.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9pkouzj20kf079gmi.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9q85kjj20km07ajrx.jpg">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lrvb9rpkj20m10go0tz.jpg">
-<meta property="og:updated_time" content="2019-03-31T14:59:44.456Z">
+<meta property="og:updated_time" content="2019-05-16T12:40:28.311Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS6.8最小化安装">
-<meta name="twitter:description" content="安装CentOS6.8操作系统的过程加载完CentOS6.8的ISO镜像文件后，开启/重启计算机或虚拟机，此时系统会进行自检，自检完毕后就会出现如图1-1所示的安装操作系统时的引导界面。  图1-1提示：如果是在虚拟机上安装CentOS系统，需要进入虚拟机界面操作，如果需要退出虚拟机界面，可按快捷组合键Ctrl+Alt。  选择系统引导方式在图1-1所示的引导界面中，可以看到共有五种引导方式，其中">
-<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/78796c09gy1g1lr7vuicxj20hu0dbqeg.jpg">
+<meta name="twitter:title" content="Python相关知识点（一）">
+<meta name="twitter:description" content="线性结构 线性结构 可迭代 for … in 可用len()获取长度 可以通过下标访问 可以切片   学过的线性结构 列表、元组、字符串、bytes、bytearray  切片 切片 通过索引区间访问线性结构的一段数据 sequence[start,stop]区间的子序列 支持负索引 start为0，可以省略 stop为末尾，可以省略 超过上界（有边界），就取到末尾；超过下界（左边界），取到开头">
 
 
 
@@ -148,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://chomd.club/2017/12/08/CentOS6.8最小化安装/"/>
+  <link rel="canonical" href="http://chomd.club/2019/05/16/Python相关知识点（一）/"/>
 
 
 
 
 
-  <title>CentOS6.8最小化安装 | Linux修行路</title>
+  <title>Python相关知识点（一） | Linux修行路</title>
   
 
 
@@ -328,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chomd.club/2017/12/08/CentOS6.8最小化安装/">
+    <link itemprop="mainEntityOfPage" href="http://chomd.club/2019/05/16/Python相关知识点（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tao">
@@ -345,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">CentOS6.8最小化安装</h1>
+          <h1 class="post-title" itemprop="name headline">Python相关知识点（一）</h1>
         
 
         <div class="post-meta">
@@ -357,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-08T19:11:41+08:00">
-                2017-12-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-16T18:07:28+08:00">
+                2019-05-16
               </time>
             
 
@@ -380,8 +356,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux学习笔记</span>
+                  <a href="/categories/Python学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">Python学习笔记</span>
                   </a>
                 </span>
 
@@ -417,91 +393,122 @@
       
 
       
-        <h2 id="安装CentOS6-8操作系统的过程"><a href="#安装CentOS6-8操作系统的过程" class="headerlink" title="安装CentOS6.8操作系统的过程"></a><strong>安装CentOS6.8操作系统的过程</strong></h2><p>加载完CentOS6.8的ISO镜像文件后，开启/重启计算机或虚拟机，此时系统会进行自检，自检完毕后就会出现如图1-1所示的安装操作系统时的引导界面。</p>
-<blockquote>
-<p>图1-1<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr7vuicxj20hu0dbqeg.jpg" alt=""><br>提示：如果是在虚拟机上安装CentOS系统，需要进入虚拟机界面操作，如果需要退出虚拟机界面，可按快捷组合键Ctrl+Alt。</p>
+        <h3 id="线性结构"><a href="#线性结构" class="headerlink" title="线性结构"></a>线性结构</h3><ul>
+<li>线性结构<ul>
+<li>可迭代 for … in</li>
+<li>可用len()获取长度</li>
+<li>可以通过下标访问</li>
+<li>可以切片</li>
+</ul>
+</li>
+<li>学过的线性结构</li>
+<li>列表、元组、字符串、bytes、bytearray</li>
+</ul>
+<h3 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h3><ul>
+<li>切片<ul>
+<li>通过索引区间访问线性结构的一段数据</li>
+<li>sequence[start,stop]区间的子序列</li>
+<li>支持负索引</li>
+<li>start为0，可以省略</li>
+<li>stop为末尾，可以省略</li>
+<li>超过上界（有边界），就取到末尾；超过下界（左边界），取到开头</li>
+<li>start一定要在stop左边</li>
+<li>[:] 表示从头至尾，全部元素取出，等效于copy()方法</li>
+</ul>
+</li>
+<li>步长切片<ul>
+<li>[start:stop:step]</li>
+<li>step为不长，可正、负整数，默认是1</li>
+<li>setp要和start:stop同向，否则返回空序列<blockquote>
+<p>   In [1]: ‘www.hongtao.com’[4:10:2]　　#setp和start:stop同向<br>Out[1]: ‘hnt’<br>In [2]: list(‘www.hongtao.com’)[4:10:-2]　　#setp和start:stop不同向<br>Out[2]: []  </p>
 </blockquote>
-<h3 id="选择系统引导方式"><a href="#选择系统引导方式" class="headerlink" title="选择系统引导方式"></a><strong>选择系统引导方式</strong></h3><p>在图1-1所示的引导界面中，可以看到共有五种引导方式，其中第一种（新服务器安装或已有服务器升级）和第三种（系统故障恢复）引导方式比较有用，其他几个选择基本用途不大，可以忽略。此处选择第一项“Install or upgrade an existing system”，即默认选项，然后按Enter（回车）键进入图形安装界面。  </p>
-<h3 id="检查安装光盘介质"><a href="#检查安装光盘介质" class="headerlink" title="检查安装光盘介质"></a><strong>检查安装光盘介质</strong></h3><p>确定引导方式后，进入如图1-2所示的界面，如果需要检查光盘介质，选择“OK”，否则按Tab键选择“Skip”，这里直接按Tab选择“Skip”，然后按Enter键 继续  </p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="封装和解构"><a href="#封装和解构" class="headerlink" title="封装和解构"></a>封装和解构</h3><ul>
+<li><p>例子</p>
 <blockquote>
-<p>图1-2<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9iafg7j20m60ggglo.jpg" alt=""></p>
+<p>   a = 3<br>In [4]: b = 4<br>In [5]: temp = a　　　　&lt;==&gt;　　　　a,b=b,a<br>In [6]: a = b<br>In [7]: b = temp  </p>
 </blockquote>
-<h3 id="进入安装下一步界面"><a href="#进入安装下一步界面" class="headerlink" title="进入安装下一步界面"></a><strong>进入安装下一步界面</strong></h3><p>忽略光盘介质检查后，进入如图1-3所示的界面。然后单击“NEXT”键继续。   </p>
-<blockquote>
-<p>图1-3<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9lkxeij20mb0gi43c.jpg" alt=""></p>
+<ul>
+<li>上例a,b = b,a中，等号右边使用了封装，而左边则是使用了解构</li>
+</ul>
+</li>
+</ul>
+<h4 id="解构"><a href="#解构" class="headerlink" title="解构"></a>解构</h4><ul>
+<li>把线性结构的元素解开，并顺序的赋给其它变量</li>
+<li>左边接纳的变量数要和右边解开的元素个数一致<blockquote>
+<p>   In [8]: lst = [1,2]<br>In [9]: first,second = lst<br>In [10]: print(first,second)<br>1 2<br>#非线性结构也可以结构：<br>In [12]: a,b = {‘a’:1,’b’:2}<br>In [13]: a<br>Out[13]: ‘a’<br>In [14]: b<br>Out[14]: ‘b’  </p>
 </blockquote>
-<h3 id="安装过程语言选择"><a href="#安装过程语言选择" class="headerlink" title="安装过程语言选择"></a><strong>安装过程语言选择</strong></h3><p>进入如图1-4所示的界面后，可对安装过程语言进行选择，这里保留默认选项“English”即可，然后单机“Next”继续。  </p>
-<blockquote>
-<p>图1-4<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9kekt2j20m50ge0u1.jpg" alt=""></p>
+</li>
+</ul>
+<h4 id="Python3的解构"><a href="#Python3的解构" class="headerlink" title="Python3的解构"></a>Python3的解构</h4><ul>
+<li>使用 *变量名 接收，但不能单独使用  </li>
+<li>被 *变量名 收集后组成一个列表<blockquote>
+<p>   In [15]: lst = list(range(1,11,2))<br>In [16]: head,*mid,tail = lst<br>In [17]: type(mid)<br>Out[17]: list　　#mid类型为list</p>
 </blockquote>
-<h3 id="选择键盘布局"><a href="#选择键盘布局" class="headerlink" title="选择键盘布局"></a><strong>选择键盘布局</strong></h3><p>进入如图1-5所示的选择键盘布局界面后，选择保留默认选项“U.S.English”，单击“NEXT”继续  </p>
-<blockquote>
-<p>图1-5<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9j34r2j20m70gigmq.jpg" alt="">  </p>
+</li>
+</ul>
+<h3 id="丢弃变量"><a href="#丢弃变量" class="headerlink" title="丢弃变量"></a>丢弃变量</h3><ul>
+<li>在python中，如果不关心一个变量，可以定义改变量的名字为_，这是一个惯例，一个不成文的约定，而不是标准</li>
+<li>_是一个合法的标识符，也可以作为一个一个有效的变量使用，但是定义成下划线就是希望不被使用，除非你明确的知道这个数据需要使用，否则不推荐<blockquote>
+<p>   In [18]: lst = list(range(1,11,2))<br>In [19]: head,*_,tail = lst<br>In [20]: print(_)  　　#_是一个合法的标识符，看到下划线就知道该变量不想被使用<br>[3, 5, 7]  </p>
 </blockquote>
-<h3 id="选择合理的物理设备"><a href="#选择合理的物理设备" class="headerlink" title="选择合理的物理设备"></a><strong>选择合理的物理设备</strong></h3><p>进入如图1-6所示的界面后，会看到两个选项，如果是普通服务器，默认选择第一个“Basic Storage Devices”即可，第二个是用于特殊存储设备的，例如SANs（ISCSI）等。这里保留默认选项即可，然后单击“NEXT”继续。  </p>
-<blockquote>
-<p>图1-6<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9j1hq3j20m50gfmy1.jpg" alt=""></p>
-</blockquote>
-<h3 id="初始化硬盘提示"><a href="#初始化硬盘提示" class="headerlink" title="初始化硬盘提示"></a><strong>初始化硬盘提示</strong></h3><p>进入如图1-7所示的界面后，会看到相应的警告信息，单击 “Yes,discard any data” 继续。   </p>
-<blockquote>
-<p>图1-7<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9j1zyoj20j809y3zb.jpg" alt=""></p>
-</blockquote>
-<h3 id="初始化主机名"><a href="#初始化主机名" class="headerlink" title="初始化主机名"></a><strong>初始化主机名</strong></h3><p>现在进入如图1-8界面，在图1-8中，左上角的“Hostname”表示配置主机名，在右边的边框里，会有默认的主机名，将其清空，然后设置你自己的主机名，这里用zht作为主机名。  </p>
-<blockquote>
-<p>图1-8<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9k9rakj20mb0gmt9f.jpg" alt=""></p>
-</blockquote>
-<h3 id="系统时钟及时区设置"><a href="#系统时钟及时区设置" class="headerlink" title="系统时钟及时区设置"></a><strong>系统时钟及时区设置</strong></h3><p>在图1-9所示的界面中，选择“Asia/Shanghai”，然后取消“System clock uses UTC” 前的对勾，然后单击”Next”继续。  </p>
-<blockquote>
-<p>图1-9<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9n3ju1j20m50ge76m.jpg" alt=""></p>
-</blockquote>
-<h3 id="设置超级用户root口令"><a href="#设置超级用户root口令" class="headerlink" title="设置超级用户root口令"></a><strong>设置超级用户root口令</strong></h3><p>在如图1-10界面中，输入两次root用户的口令，然后单击右下角“Next”继续。如果密码过于简单会出现如图1-11所示的提示，可以选择单击“Use Anyway”强制设置。  </p>
-<blockquote>
-<p>图1-10<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9marluj20m405lgm6.jpg" alt=""></p>
-<p>图1-11<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9mdbawj209d03x74c.jpg" alt=""></p>
-</blockquote>
-<h2 id="磁盘分区选择与磁盘分区配置过程"><a href="#磁盘分区选择与磁盘分区配置过程" class="headerlink" title="磁盘分区选择与磁盘分区配置过程"></a><strong>磁盘分区选择与磁盘分区配置过程</strong></h2><h3 id="选择系统安装磁盘空间类型"><a href="#选择系统安装磁盘空间类型" class="headerlink" title="选择系统安装磁盘空间类型"></a><strong>选择系统安装磁盘空间类型</strong></h3><p>经过以上步骤之后，会进入如图2-1所示的界面。  </p>
-<blockquote>
-<p>图2-1<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9myaq1j20m60gk0uh.jpg" alt=""></p>
-</blockquote>
-<p>在这里我们选择“Create Custom Layout”自定义磁盘分区，然后会进入如图2-2所示的界面中。  </p>
-<blockquote>
-<p>图2-2<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9mxexsj20m90gkdgq.jpg" alt=""></p>
-</blockquote>
-<h3 id="自行定制磁盘分区"><a href="#自行定制磁盘分区" class="headerlink" title="自行定制磁盘分区"></a><strong>自行定制磁盘分区</strong></h3><p>在这里，先选中磁盘下的“Free 10236”这一行，然后点击“Create”按钮，开始创建磁盘分区，进入如图2-3所示的界面  </p>
-<blockquote>
-<p>图2-3<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9nngsrj20990a53z1.jpg" alt=""></p>
-</blockquote>
-<p>选择创建标准分区（Standard Partition）后，单击页面右下角的“Create”按钮，进入到如图2-4所示的界面，然后按照图2-4所示配置第一个分区（boot分区）即可，配置完成后点击“OK”即可。  </p>
-<blockquote>
-<p>图2-4<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9njahsj20e10cvq3m.jpg" alt=""></p>
-</blockquote>
-<p>接着继续创建swap交换分区，配置如图2-5界面所示即可，然后点击“OK”  </p>
-<blockquote>
-<p>图2-5<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9nl3ujj20e40cq3za.jpg" alt=""></p>
-</blockquote>
-<p>最后一步创建根（/）分区，再次进入“Add Partition”操作界面后，按照图2-6配置根（/）分区的设置即可。  </p>
-<blockquote>
-<p>图2-6<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9o93v8j20e30ctwf6.jpg" alt=""><br>由于根（/）分区是最后一个分区，因此就把剩余的空间都给它了 !</p>
-</blockquote>
-<p>创建完根分区后，最终的结果如图2-7所示，然后点击“Next”继续。此时，系统需要对分区进行格式化，而且会出现格式化警告窗口，这时，单击“Format（格式化）”  继续即可，这个过程可能还会提示写入分区表，在写入配置但磁盘的窗口中，单机“write changes to disk”继续。</p>
-<blockquote>
-<p>图2-7<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9oaa6qj20m40ghjsd.jpg" alt=""></p>
-</blockquote>
-<h2 id="CentOS6-8系统安装包组的选择与配置过程"><a href="#CentOS6-8系统安装包组的选择与配置过程" class="headerlink" title="CentOS6.8系统安装包组的选择与配置过程"></a><strong>CentOS6.8系统安装包组的选择与配置过程</strong></h2><h3 id="启动引导设备的配置"><a href="#启动引导设备的配置" class="headerlink" title="启动引导设备的配置"></a><strong>启动引导设备的配置</strong></h3><p>分区格式化格式化后，会进入如图2-8所示的界面，系统默认使用FRUB作为启动加载器，引导程序默认在MBR下，按“Next”继续。  </p>
-<blockquote>
-<p>图2-8<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9pfa0jj20ma0gmabf.jpg" alt=""><br>勾选图中的“Use a boot loader password”可为GRUB引导菜单设置密码，防止别人接触到计算机破解root密码。</p>
-<h3 id="系统安装类型选择击自定义额外包组"><a href="#系统安装类型选择击自定义额外包组" class="headerlink" title="系统安装类型选择击自定义额外包组"></a><strong>系统安装类型选择击自定义额外包组</strong></h3><p>进入图2-9所示的界面后，勾选“Miniml”和“Customize now（立即自定义）”然后单击“Next”继续即可，然后会进入自定义安装包选择界面。<br>图2-9<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9orwjpj20lx0ghdh5.jpg" alt=""></p>
-</blockquote>
-<p>在自定义安装包选择界面中，按照图2-10和图2-11所示配置即可。然后点击“Next”继续即可开始安装系统了！  </p>
-<blockquote>
-<p>图2-10<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9pkouzj20kf079gmi.jpg" alt=""></p>
-<p>图2-11<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lr9q85kjj20km07ajrx.jpg" alt=""></p>
-</blockquote>
-<h3 id="安装结束"><a href="#安装结束" class="headerlink" title="安装结束"></a><strong>安装结束</strong></h3><p>系统安装结束后，出现的界面如图2-12所示，此时单击“Reboot”键即可重启系统。  </p>
-<blockquote>
-<p>图2-12<img src="http://ww1.sinaimg.cn/large/78796c09gy1g1lrvb9rpkj20m10go0tz.jpg" alt=""></p>
-</blockquote>
-<p>   以上内容参考自著名讲师老男孩的著作《跟老男孩学Linux运维web集群实战》一书！！</p>
+</li>
+<li>总结<ul>
+<li>_这个变量本身无任何语义，没有任何可读性，所以不是用来给人使用的</li>
+<li>Python中很多库都在使用这个变量，使用十分广泛，故在不明确变量作用域的情况下，不推荐使用_变量，避免和库中_冲突</li>
+</ul>
+</li>
+</ul>
+<h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><h4 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h4><ul>
+<li>全集：所有元素的集合，例如实数集，所有实数组成的集合就是全集</li>
+<li>子集(subset)和超集(superset)：一个集合A所有元素在另外一个集合B内，A是B的子集，B是A的超集</li>
+<li>真子集和真超集：A是B的子集，且A不等于B，A就是B的真子集，B是A的真超集</li>
+<li>并集：多个集合合并的结果</li>
+<li>交集：多个集合的公共部分</li>
+<li>差集：集合中除去和其他集合公共部分</li>
+</ul>
+<h4 id="集合运算"><a href="#集合运算" class="headerlink" title="集合运算"></a>集合运算</h4><ul>
+<li>并集<ul>
+<li>将两个集合A和B的所有的元素合并到一起，组成的集合称作集合A与集合B的并集</li>
+<li>union(*others)  –&gt; 返回多个集合合并后的新的集合</li>
+<li>| 运算符重载（等同union）</li>
+<li>update(*others) –&gt; 和多个集合合并，就地修改</li>
+<li>|= （等同与update）</li>
+</ul>
+</li>
+<li>交集<ul>
+<li>集合A和B，由所有属于A且属于B的元素组成的集合</li>
+<li>intersection(*others) –&gt; 返回和多个集合的交集</li>
+<li>&amp; （等同intersection）</li>
+<li>intersection_uodate(*others) –&gt; 获取和多个集合的交集，并就地修改</li>
+<li>&amp;= （等同intersection_uodate）</li>
+</ul>
+</li>
+<li>差集<ul>
+<li>集合A和B，由所有属于A且不属于B的元素组成的集合</li>
+<li>difference(*others) –&gt; 返回会多个集合的差集</li>
+<li>- （等同difference）</li>
+<li>difference_update(*others) –&gt; 获取和多个集合的差集并就地修改</li>
+<li>-= （等同difference_update）</li>
+</ul>
+</li>
+<li>对称差集<ul>
+<li>集合A和B，由所有不属于A和B的交集元素组成的集合，记作（A-B）∪(B-A)</li>
+<li>symmetric_differece(other) –&gt; 返回和另一个集合的差集</li>
+<li>^ （等同symmetric_differece）</li>
+<li>symmetric_differece_update(other) –&gt; 获取和另一个集合的差集并就地修改</li>
+<li>^= (等同symmetric_differece_update)</li>
+</ul>
+</li>
+<li>issubset、&lt;=  　　　　　　–&gt;　　　判断当前集合是否是另一个集合的自己</li>
+<li>set1 &lt; set2　　　 　　　　–&gt;　　　判断set1是否是set2的真子集</li>
+<li>issuperset(other)、&gt;=　　–&gt;　　　判断当前集合是否是other的超集</li>
+<li>set1 &gt; set2　　　　　　　 –&gt;　　　判断set1是否是set2的真超集</li>
+<li>isdisjoint(other)　　　　　–&gt;　　　判断当前集合与另一集合是否有交集，没有交集，返回True</li>
+</ul>
 
       
     </div>
@@ -557,7 +564,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"><i class=" fa fa-tag"></i> Linux</a>
+            <a href="/tags/Python/" rel="tag"><i class=" fa fa-tag"></i> Python</a>
           
         </div>
       
@@ -570,15 +577,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/05/16/python基本内置数据结构（二）/" rel="next" title="python基本内置数据结构（二）">
+                <i class="fa fa-chevron-left"></i> python基本内置数据结构（二）
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/12/21/Linux常用命令及相关参数/" rel="prev" title="Linux常用命令及相关参数">
-                Linux常用命令及相关参数 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -773,7 +780,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装CentOS6-8操作系统的过程"><span class="nav-number">1.</span> <span class="nav-text">安装CentOS6.8操作系统的过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择系统引导方式"><span class="nav-number">1.1.</span> <span class="nav-text">选择系统引导方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检查安装光盘介质"><span class="nav-number">1.2.</span> <span class="nav-text">检查安装光盘介质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入安装下一步界面"><span class="nav-number">1.3.</span> <span class="nav-text">进入安装下一步界面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装过程语言选择"><span class="nav-number">1.4.</span> <span class="nav-text">安装过程语言选择</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择键盘布局"><span class="nav-number">1.5.</span> <span class="nav-text">选择键盘布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择合理的物理设备"><span class="nav-number">1.6.</span> <span class="nav-text">选择合理的物理设备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化硬盘提示"><span class="nav-number">1.7.</span> <span class="nav-text">初始化硬盘提示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化主机名"><span class="nav-number">1.8.</span> <span class="nav-text">初始化主机名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统时钟及时区设置"><span class="nav-number">1.9.</span> <span class="nav-text">系统时钟及时区设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置超级用户root口令"><span class="nav-number">1.10.</span> <span class="nav-text">设置超级用户root口令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#磁盘分区选择与磁盘分区配置过程"><span class="nav-number">2.</span> <span class="nav-text">磁盘分区选择与磁盘分区配置过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择系统安装磁盘空间类型"><span class="nav-number">2.1.</span> <span class="nav-text">选择系统安装磁盘空间类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自行定制磁盘分区"><span class="nav-number">2.2.</span> <span class="nav-text">自行定制磁盘分区</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CentOS6-8系统安装包组的选择与配置过程"><span class="nav-number">3.</span> <span class="nav-text">CentOS6.8系统安装包组的选择与配置过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#启动引导设备的配置"><span class="nav-number">3.1.</span> <span class="nav-text">启动引导设备的配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#系统安装类型选择击自定义额外包组"><span class="nav-number">3.2.</span> <span class="nav-text">系统安装类型选择击自定义额外包组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装结束"><span class="nav-number">3.3.</span> <span class="nav-text">安装结束</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性结构"><span class="nav-number">1.</span> <span class="nav-text">线性结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切片"><span class="nav-number">2.</span> <span class="nav-text">切片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封装和解构"><span class="nav-number">3.</span> <span class="nav-text">封装和解构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#解构"><span class="nav-number">3.1.</span> <span class="nav-text">解构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python3的解构"><span class="nav-number">3.2.</span> <span class="nav-text">Python3的解构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#丢弃变量"><span class="nav-number">4.</span> <span class="nav-text">丢弃变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合"><span class="nav-number">5.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本概念"><span class="nav-number">5.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#集合运算"><span class="nav-number">5.2.</span> <span class="nav-text">集合运算</span></a></li></ol></li></ol></div>
             
 
           </div>
