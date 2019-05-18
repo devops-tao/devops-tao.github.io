@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="基础语法注释 Python中单行注释以 # 开头 实例如下: #第一个注释   print (&amp;quot;Hello, Python!&amp;quot;) # 第二个注释      执行以上代码，输出结果为： Hello, Python!      数字 int (整数), python3.0+中不区分（long和int）   bool (布尔), 2个值 True、False。   float (浮点">
+<meta name="description" content="函数 函数 数学定义：y=f(x)，y是x的函数，x是自变量 Python函数 由若干个语句组成的语句块、函数名称、参数列表构成，它是组织代码的最小单元 完成一定的功能     函数的作用 结构化变成对代码的最基本的封装，一般按照功能组织一段代码 封装的目的是为了复用，减少冗余 代码更加简洁美观、可读易懂   函数的分类 内建函数，如max()、reversed()等 库函数，如math.ceil">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python基础语法">
-<meta property="og:url" content="http://chomd.club/2019/04/11/Python基础语法/index.html">
+<meta property="og:title" content="Python函数（一）">
+<meta property="og:url" content="http://chomd.club/2019/05/17/Python函数（一）/index.html">
 <meta property="og:site_name" content="Linux修行路">
-<meta property="og:description" content="基础语法注释 Python中单行注释以 # 开头 实例如下: #第一个注释   print (&amp;quot;Hello, Python!&amp;quot;) # 第二个注释      执行以上代码，输出结果为： Hello, Python!      数字 int (整数), python3.0+中不区分（long和int）   bool (布尔), 2个值 True、False。   float (浮点">
+<meta property="og:description" content="函数 函数 数学定义：y=f(x)，y是x的函数，x是自变量 Python函数 由若干个语句组成的语句块、函数名称、参数列表构成，它是组织代码的最小单元 完成一定的功能     函数的作用 结构化变成对代码的最基本的封装，一般按照功能组织一段代码 封装的目的是为了复用，减少冗余 代码更加简洁美观、可读易懂   函数的分类 内建函数，如max()、reversed()等 库函数，如math.ceil">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-11T07:31:09.738Z">
+<meta property="og:updated_time" content="2019-05-17T03:13:40.515Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python基础语法">
-<meta name="twitter:description" content="基础语法注释 Python中单行注释以 # 开头 实例如下: #第一个注释   print (&amp;quot;Hello, Python!&amp;quot;) # 第二个注释      执行以上代码，输出结果为： Hello, Python!      数字 int (整数), python3.0+中不区分（long和int）   bool (布尔), 2个值 True、False。   float (浮点">
+<meta name="twitter:title" content="Python函数（一）">
+<meta name="twitter:description" content="函数 函数 数学定义：y=f(x)，y是x的函数，x是自变量 Python函数 由若干个语句组成的语句块、函数名称、参数列表构成，它是组织代码的最小单元 完成一定的功能     函数的作用 结构化变成对代码的最基本的封装，一般按照功能组织一段代码 封装的目的是为了复用，减少冗余 代码更加简洁美观、可读易懂   函数的分类 内建函数，如max()、reversed()等 库函数，如math.ceil">
 
 
 
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://chomd.club/2019/04/11/Python基础语法/"/>
+  <link rel="canonical" href="http://chomd.club/2019/05/17/Python函数（一）/"/>
 
 
 
 
 
-  <title>Python基础语法 | Linux修行路</title>
+  <title>Python函数（一） | Linux修行路</title>
   
 
 
@@ -304,7 +304,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chomd.club/2019/04/11/Python基础语法/">
+    <link itemprop="mainEntityOfPage" href="http://chomd.club/2019/05/17/Python函数（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tao">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python基础语法</h1>
+          <h1 class="post-title" itemprop="name headline">Python函数（一）</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-11T13:16:18+08:00">
-                2019-04-11
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-17T09:53:06+08:00">
+                2019-05-17
               </time>
             
 
@@ -393,198 +393,150 @@
       
 
       
-        <h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><ul>
-<li>Python中单行注释以 # 开头<blockquote>
-<p>实例如下:</p>
-<pre><code>#第一个注释  
-print (&quot;Hello, Python!&quot;) # 第二个注释     
-</code></pre><p>执行以上代码，输出结果为：</p>
-<pre><code>Hello, Python!  
-</code></pre></blockquote>
+        <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><ul>
+<li>函数<ul>
+<li>数学定义：y=f(x)，y是x的函数，x是自变量</li>
+<li>Python函数<ul>
+<li>由若干个语句组成的语句块、函数名称、参数列表构成，它是组织代码的最小单元</li>
+<li>完成一定的功能</li>
+</ul>
 </li>
 </ul>
-<h3 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h3><ul>
-<li>int (整数), python3.0+中不区分（long和int）  </li>
-<li>bool (布尔), 2个值 True、False。  </li>
-<li>float (浮点数), 如 1.23、-0.12 1.46e9等价与1.46*10⁹  </li>
-<li>complex (复数), 如 1 + 2j </li>
+</li>
+<li>函数的作用<ul>
+<li>结构化变成对代码的最基本的封装，一般按照功能组织一段代码</li>
+<li>封装的目的是为了复用，减少冗余</li>
+<li>代码更加简洁美观、可读易懂</li>
 </ul>
-<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ul>
-<li>使用’ “单双引号引用的字符的序列  </li>
-<li>‘’’ “””单双三引号，可以跨行使用、可在其中自由的使用单双引号　</li>
-<li>在字符串前面加上r或R前缀，表示该字符不做特殊处理,实例如下：   </li>
+</li>
+<li>函数的分类<ul>
+<li>内建函数，如max()、reversed()等</li>
+<li>库函数，如math.ceil()等</li>
 </ul>
-<blockquote>
-<pre><code>print(&apos;hello\nTao&apos;)      # 使用反斜杠(\)+n转义特殊字符   
-print(r&apos;hello\nTao&apos;)     # 在字符串前面添加一个 r，表示原始字符串，不会发生转义　　
-</code></pre></blockquote>
-<p>　输出结果如下：    </p>
-<blockquote>
-<pre><code>hello  
-Tao   
-hello\nTao     
-</code></pre></blockquote>
-<h3 id="转义序列"><a href="#转义序列" class="headerlink" title="转义序列"></a>转义序列</h3><ul>
-<li>\\　 \t  　\r 　 \n　  \’ 　 \”  </li>
-<li>前缀r，把里面的所有字符当普通字符对待</li>
-</ul>
-<h3 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h3><ul>
-<li>未使用C语言的花括号，而是采用缩进的方式表示层次关系</li>
-<li>约定使用4个空格缩进（可自定义）</li>
-</ul>
-<h3 id="续行"><a href="#续行" class="headerlink" title="续行"></a>续行</h3><ul>
-<li>在行尾使用反斜杠（\），例如：</li>
-<li>如果使用各种括号，认为括号内是一个整体，内部跨行不用\</li>
-</ul>
-<h3 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h3><ul>
-<li>1、一个名字，用来指代一个值</li>
-<li>2、只能由字母、下划线和数字组成</li>
-<li>3、只能以字母或下划线开头（不建议使用下划线（_）开头）</li>
-<li>4、不能使python的关键字，例如def、class等就不能作为标识符</li>
-<li>5、Python大小写敏感</li>
-</ul>
-<h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><ul>
-<li>一旦赋值就不能改变值得标识符</li>
-<li>python中无法定义常量</li>
-</ul>
-<h3 id="字面常量"><a href="#字面常量" class="headerlink" title="字面常量"></a>字面常量</h3><ul>
-<li>一个单独的量，如45、”abc”、’41561321.135e-8’</li>
-</ul>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><ul>
-<li>赋值后，可以改变值得标识符</li>
-</ul>
-<h2 id="运算符（Operator）"><a href="#运算符（Operator）" class="headerlink" title="运算符（Operator）"></a>运算符（Operator）</h2><h3 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h3><ul>
-<li>+　 -　 *　 、　 %　 **</li>
-<li>自然除/结果是浮点数，整除//是整数。例子：<blockquote>
-<pre><code>print(6/3)  
-print(6//3)  
-</code></pre></blockquote>
 </li>
 </ul>
+<h3 id="函数定义、调用"><a href="#函数定义、调用" class="headerlink" title="函数定义、调用"></a>函数定义、调用</h3><ul>
+<li><p>def语句定义函数</p>
 <blockquote>
-<p>输出结果如下： </p>
-<pre><code>2.0  
-2
-</code></pre></blockquote>
-<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><ul>
-<li>&amp;　|　~　^　&lt;&lt;　&gt;&gt;</li>
-<li>常用方式：乘除2的倍数，32 // 4想当于32 &gt;&gt; 2</li>
-</ul>
-<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><ul>
-<li>==　 !=　&lt;　&gt;　&lt;=　&gt;=<br>　返回值通常是一个bool值</li>
-</ul>
-<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><ul>
-<li>与或非 and or not</li>
-<li>短路运算符　　<br>　　and如果第一个表达式为False，后面就没必要计算了，这个逻　　辑表达式一定是False<br>　　or如果第一个表达式是True，后面也没必要计算了，这个逻辑　　表达式一定是True</li>
-</ul>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><ul>
-<li>a = 10</li>
-<li>+=　 -=　 *=　 /=　 %=等</li>
-<li>x=y=z=10</li>
-</ul>
-<h3 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a>成员运算符</h3><ul>
-<li>in、not in</li>
-</ul>
-<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><ul>
-<li>is、is not</li>
-</ul>
-<h2 id="表达式"><a href="#表达式" class="headerlink" title="表达式"></a>表达式</h2><h3 id="有数字、、符号、括号、变量等组合而成"><a href="#有数字、、符号、括号、变量等组合而成" class="headerlink" title="有数字、、符号、括号、变量等组合而成"></a>有数字、、符号、括号、变量等组合而成</h3><ul>
-<li>算数表达式</li>
-<li>逻辑表达式</li>
-<li>赋值表达式<br>Python中，赋值即定义，如果一个变量已经定义，赋值相当于重新定义</li>
-</ul>
-<h2 id="单分支结构"><a href="#单分支结构" class="headerlink" title="单分支结构"></a>单分支结构</h2><h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><ul>
-<li>if condition:<br>　　代码块<br>condition必须是一个bool类型，这个地方有一个隐式转换bool(condition)<br>例子：<blockquote>
-<pre><code>if 1 &lt; 2:  
-print(&quot;1比2小&quot;)  
-</code></pre></blockquote>
-</li>
-</ul>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><ul>
-<li>类似于if语句的冒号后面的一个语句块</li>
-<li>在if、for、def、class等中</li>
-</ul>
-<h2 id="多分支结构"><a href="#多分支结构" class="headerlink" title="多分支结构"></a>多分支结构</h2><ul>
-<li>if…elif…else语句<br>if condition1:<br>　　代码块1<br>elif condition2:<br>　　代码块2<br>elif condition3:<br>　　代码块3<br>……<br>else：<br>　　代码块n  </li>
-</ul>
-<p>　　例子：</p>
-<blockquote>
-<pre><code>score = 85
-if score &gt;= 90:
-   print(&apos;A&apos;)
-elif score &gt;=60:
-   print(&apos;B&apos;)
-else:
-   print(&apos;C&apos;)
-</code></pre></blockquote>
-<h2 id="分支嵌套"><a href="#分支嵌套" class="headerlink" title="分支嵌套"></a>分支嵌套</h2><ul>
-<li>嵌套结构，可以是分支、循环的嵌套，可以是互相嵌套多层  </li>
-</ul>
-<p>　　例子：</p>
-<blockquote>
-<pre><code>score = 85
-if score &lt;0:
-   print(&apos;error&apos;)
-else:
-   if score &gt;= 90:
-      print(&apos;A&apos;)
-   elif score &gt;=60:
-      print(&apos;B&apos;)
-   else:
-      print(&apos;C&apos;)
-</code></pre></blockquote>
-<h2 id="循环——while语句"><a href="#循环——while语句" class="headerlink" title="循环——while语句"></a>循环——while语句</h2><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>　　while condition:<br>　　　　block </p>
+<p>   def 函数名(参数列表)：<br>　　函数体(代码块)<br>　　[return 返回值]</p>
+</blockquote>
 <ul>
-<li>当条件满足即condition为True时，进入循环体，执行block  <blockquote>
-<p>例子：    </p>
-<pre><code>i = 5
-while i:
-    print(i)
-    i -= 1  
-</code></pre><p>输出结构如下：   </p>
-<pre><code>5
-4
-3
-2
-1
+<li>函数名就是标识符，命名要求一样</li>
+<li>语句块必须缩进，约定4个空格</li>
+<li>Python的函数没有return语句时，隐式会返回一个None值</li>
+<li>定义中的参数列表成为形式参数，只是一种符号表达，简称形参</li>
+</ul>
+</li>
+<li>调用<ul>
+<li>函数定义只是声明了一个函数，它不会被执行，需要调用</li>
+<li>调用的方式，就是函数名加上小括号，括号内写上参数</li>
+<li>调用时写的参数是实际参数，是实实在在传入的值，简称实参</li>
+</ul>
+</li>
+<li>函数举例<blockquote>
+<pre><code>In [1]: def add(x,y):      #定义一个add函数
+...:     result = x + y  
+...:     return result    
+In [2]: out = add(4,5)     #调用add函数
+In [3]: print(out)
+9
+</code></pre><p>   注意：1、函数是可调用对象，callable()<br>　　　2、函数需要在调用前定义，否则会抛NameError异常</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h3><ul>
+<li>参数调用时传用的参数要和定义的个数相匹配（可变参数除外）</li>
+</ul>
+<h4 id="参数默认值"><a href="#参数默认值" class="headerlink" title="参数默认值"></a>参数默认值</h4><blockquote>
+<pre><code>def fn(x=5):
+    print(x)
+fn()             #等价于fn(x=5)
+</code></pre></blockquote>
+<h4 id="位置参数"><a href="#位置参数" class="headerlink" title="位置参数"></a>位置参数</h4><ul>
+<li>按照参数定义顺序传入实参</li>
+<li>def f(x,y,z) 调用使用 f(1,3,5)</li>
+</ul>
+<h4 id="关键字参数"><a href="#关键字参数" class="headerlink" title="关键字参数"></a>关键字参数</h4><ul>
+<li>使用形参的名字来传入实参的方式，如果使用了形参名字，那么传参顺序就可和定义顺序不同</li>
+<li>def f(x,y,z) 调用使用 d(x=1,z=5，y=3)</li>
+</ul>
+<h4 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h4><ul>
+<li>一个形参可以匹配任意个参数</li>
+</ul>
+<h5 id="位置参数的可变参数"><a href="#位置参数的可变参数" class="headerlink" title="位置参数的可变参数"></a>位置参数的可变参数</h5><ul>
+<li>在形参前使用*表示该形参是可变参数，可以接受多个实参</li>
+<li>收集多个实参为一个tuple<blockquote>
+<p>   有多个数，需要累加求和</p>
+<pre><code>In [7]: def add(*nums):      #*nums为可变参数
+...:     sum = 0
+...:     print(type(nums))   #打印参数类型
+...:     for x in nums:  
+...:         sum += x       
+...:     print(sum)
+In [8]: add(3,6,9)           #调用函数add
+&lt;class &apos;tuple&apos;&gt;
+18
 </code></pre></blockquote>
 </li>
 </ul>
-<h2 id="循环语句——for语句"><a href="#循环语句——for语句" class="headerlink" title="循环语句——for语句"></a>循环语句——for语句</h2><h3 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h3><p>　　for element in iteratable:<br>　　　　block</p>
-<ul>
-<li>当可迭代对象中由元素可以迭代，进入循环体，执行block，常与range函数使用<blockquote>
-<p>举例：打印1~10  </p>
-<pre><code>for i in range(10):
-       print(i+1)
-</code></pre><p>输出结果如下：</p>
-<pre><code>1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
- 10
+<h5 id="关键字参数的可变参数"><a href="#关键字参数的可变参数" class="headerlink" title="关键字参数的可变参数"></a>关键字参数的可变参数</h5><ul>
+<li>在形参前使用**符号，表示可以接收多个关键字参数</li>
+<li>收集的实参名称和值组成一个字典<blockquote>
+<p>   打印配置信息：</p>
+<pre><code>In [9]: def showconfig(**kwargs):
+...:     for k,v in kwargs.items():
+...:         print(&apos;{}:{}&apos;.format(k,v))
+In [10]: showconfig(host=&apos;127.0.0.1&apos;,port=&apos;4000&apos;,username=&apos;tao&apos;,password=&apos;123456&apos;)
+password:123456
+username:tao
+port:4000
+host:127.0.0.1
 </code></pre></blockquote>
 </li>
 </ul>
-<h2 id="循环语句——continue语句"><a href="#循环语句——continue语句" class="headerlink" title="循环语句——continue语句"></a>循环语句——continue语句</h2><ul>
-<li>中断当前循环的当次执行，继续下一次循环  <blockquote>
-<p>举例：计算10以内的偶数(for循环)  </p>
-<p>  for i in range(10):</p>
-<pre><code>if i%2 !=0:
-    continue
-    print(i,end=&quot;\t&quot;)
-</code></pre><p>结果如下：  </p>
-<pre><code>0    2    4    6    8
-</code></pre></blockquote>
+<h5 id="可变参数混合使用"><a href="#可变参数混合使用" class="headerlink" title="可变参数混合使用"></a>可变参数混合使用</h5><ul>
+<li>配置信息打印<ul>
+<li>def showconfig(username,password,**kwargs)</li>
+<li>def showconfig(username,<em>args,*</em>kwargs)</li>
+<li>def showconfig(username,password,<em>*kwargs,</em>args)</li>
+</ul>
 </li>
 </ul>
-<h2 id="循环语句——else子语句"><a href="#循环语句——else子语句" class="headerlink" title="循环语句——else子语句"></a>循环语句——else子语句</h2><h3 id="语法-2"><a href="#语法-2" class="headerlink" title="语法"></a>语法</h3><p>　　while condition:<br>　　　　block<br>　　else:<br>　　　　block<br>　　for element in iteratable:<br>　　　　block<br>　　else:<br>　　　　block  </p>
-<ul>
-<li>如果循环正常的结束，就执行else语句；如果使用break终止，else子句不会执行</li>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><ul>
+<li>可变参数分为位置可变参数和关键字可变参数</li>
+<li>位置可变参数在形参前面使用一个星号*</li>
+<li>关键字可变参数在形参面前使用两个星号**</li>
+<li>位置可变参数和关键字可变参数都可以收集若干个实参，位置可变参数收集形成一个tuple，关键字可变参数收集形成一个dict</li>
+<li>混合使用参数时，可变参数要放到参数列表的最后，普通参数需要放到参数列表前面，位置可变参数需要在关键字可变参数之前</li>
+</ul>
+<h4 id="keyword-only参数（Python3加入）"><a href="#keyword-only参数（Python3加入）" class="headerlink" title="keyword-only参数（Python3加入）"></a>keyword-only参数（Python3加入）</h4><ul>
+<li>如果在一个星号参数后，或者一个位置可变参数后，出现的普通参数，实际上已经不是普通参数了，而是keyword-only参数<blockquote>
+<pre><code>In [12]: def fn(*args,x):
+...:     print(x)
+...:     print(args)
+In [13]: fn(3,5,x=7)
+7
+(3, 5)
+</code></pre><p>args可以看作已经截获了所有的位置参数，x如果不使用关键字参数就不可能拿到实参</p>
+</blockquote>
+</li>
+<li>keyword-only参数另一种形式<blockquote>
+<pre><code>In [20]: def fn(*,x,y):
+...:     print(x,y)
+In [21]: fn(x=1,y=2)
+1 2
+</code></pre><p>*号之后，普通形参都变成了必须给出的keyword-only参数</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="函数参数总结"><a href="#函数参数总结" class="headerlink" title="函数参数总结"></a>函数参数总结</h3><ul>
+<li>参数规则<ul>
+<li>参数列表参数的一般顺序是，普通参数，缺省参数，位置可变参数，keyword-only参数（带缺省值），关键字可变参数<blockquote>
+<p>def fn(x,y,z=3,<em>args,m=3,n,*</em>kwargs):<br>　　　print(x,y,z,m,n)<br>　　　print(args)<br>　　　print(kwargs)  </p>
+</blockquote>
+</li>
+</ul>
+</li>
 </ul>
 
       
@@ -654,8 +606,8 @@ while i:
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/21/Linux常用命令及相关参数/" rel="next" title="Linux常用命令及相关参数">
-                <i class="fa fa-chevron-left"></i> Linux常用命令及相关参数
+              <a href="/2019/05/16/Python相关知识点（一）/" rel="next" title="Python相关知识点（一）">
+                <i class="fa fa-chevron-left"></i> Python相关知识点（一）
               </a>
             
           </div>
@@ -664,8 +616,8 @@ while i:
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/12/Python基本内置数据结构（一）/" rel="prev" title="Python基本内置数据结构（一）">
-                Python基本内置数据结构（一） <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/17/Python函数（二）/" rel="prev" title="Python函数（二）">
+                Python函数（二） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -861,7 +813,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#基础语法"><span class="nav-number">1.</span> <span class="nav-text">基础语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">1.1.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数字"><span class="nav-number">1.2.</span> <span class="nav-text">数字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">1.3.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#转义序列"><span class="nav-number">1.4.</span> <span class="nav-text">转义序列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缩进"><span class="nav-number">1.5.</span> <span class="nav-text">缩进</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#续行"><span class="nav-number">1.6.</span> <span class="nav-text">续行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标识符"><span class="nav-number">1.7.</span> <span class="nav-text">标识符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常量"><span class="nav-number">1.8.</span> <span class="nav-text">常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字面常量"><span class="nav-number">1.9.</span> <span class="nav-text">字面常量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量"><span class="nav-number">1.10.</span> <span class="nav-text">变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#运算符（Operator）"><span class="nav-number">2.</span> <span class="nav-text">运算符（Operator）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#算数运算符"><span class="nav-number">2.1.</span> <span class="nav-text">算数运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#位运算符"><span class="nav-number">2.2.</span> <span class="nav-text">位运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较运算符"><span class="nav-number">2.3.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">2.4.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#赋值运算符"><span class="nav-number">2.5.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#成员运算符"><span class="nav-number">2.6.</span> <span class="nav-text">成员运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#身份运算符"><span class="nav-number">2.7.</span> <span class="nav-text">身份运算符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#表达式"><span class="nav-number">3.</span> <span class="nav-text">表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#有数字、、符号、括号、变量等组合而成"><span class="nav-number">3.1.</span> <span class="nav-text">有数字、、符号、括号、变量等组合而成</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#单分支结构"><span class="nav-number">4.</span> <span class="nav-text">单分支结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#if语句"><span class="nav-number">4.1.</span> <span class="nav-text">if语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码块"><span class="nav-number">4.2.</span> <span class="nav-text">代码块</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多分支结构"><span class="nav-number">5.</span> <span class="nav-text">多分支结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支嵌套"><span class="nav-number">6.</span> <span class="nav-text">分支嵌套</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环——while语句"><span class="nav-number">7.</span> <span class="nav-text">循环——while语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">7.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环语句——for语句"><span class="nav-number">8.</span> <span class="nav-text">循环语句——for语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法-1"><span class="nav-number">8.1.</span> <span class="nav-text">语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环语句——continue语句"><span class="nav-number">9.</span> <span class="nav-text">循环语句——continue语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环语句——else子语句"><span class="nav-number">10.</span> <span class="nav-text">循环语句——else子语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法-2"><span class="nav-number">10.1.</span> <span class="nav-text">语法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#函数定义、调用"><span class="nav-number">1.1.</span> <span class="nav-text">函数定义、调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数参数"><span class="nav-number">1.2.</span> <span class="nav-text">函数参数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#参数默认值"><span class="nav-number">1.2.1.</span> <span class="nav-text">参数默认值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#位置参数"><span class="nav-number">1.2.2.</span> <span class="nav-text">位置参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关键字参数"><span class="nav-number">1.2.3.</span> <span class="nav-text">关键字参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可变参数"><span class="nav-number">1.2.4.</span> <span class="nav-text">可变参数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#位置参数的可变参数"><span class="nav-number">1.2.4.1.</span> <span class="nav-text">位置参数的可变参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#关键字参数的可变参数"><span class="nav-number">1.2.4.2.</span> <span class="nav-text">关键字参数的可变参数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#可变参数混合使用"><span class="nav-number">1.2.4.3.</span> <span class="nav-text">可变参数混合使用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">1.2.4.4.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#keyword-only参数（Python3加入）"><span class="nav-number">1.2.5.</span> <span class="nav-text">keyword-only参数（Python3加入）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数参数总结"><span class="nav-number">1.3.</span> <span class="nav-text">函数参数总结</span></a></li></ol></li></ol></div>
             
 
           </div>

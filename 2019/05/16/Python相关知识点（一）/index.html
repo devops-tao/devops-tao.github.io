@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="Linux修行路">
 <meta property="og:description" content="线性结构 线性结构 可迭代 for … in 可用len()获取长度 可以通过下标访问 可以切片   学过的线性结构 列表、元组、字符串、bytes、bytearray  切片 切片 通过索引区间访问线性结构的一段数据 sequence[start,stop]区间的子序列 支持负索引 start为0，可以省略 stop为末尾，可以省略 超过上界（有边界），就取到末尾；超过下界（左边界），取到开头">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-16T12:40:28.311Z">
+<meta property="og:updated_time" content="2019-05-16T13:05:14.602Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python相关知识点（一）">
 <meta name="twitter:description" content="线性结构 线性结构 可迭代 for … in 可用len()获取长度 可以通过下标访问 可以切片   学过的线性结构 列表、元组、字符串、bytes、bytearray  切片 切片 通过索引区间访问线性结构的一段数据 sequence[start,stop]区间的子序列 支持负索引 start为0，可以省略 stop为末尾，可以省略 超过上界（有边界），就取到末尾；超过下界（左边界），取到开头">
@@ -509,6 +509,62 @@
 <li>set1 &gt; set2　　　　　　　 –&gt;　　　判断set1是否是set2的真超集</li>
 <li>isdisjoint(other)　　　　　–&gt;　　　判断当前集合与另一集合是否有交集，没有交集，返回True</li>
 </ul>
+<h3 id="列表解析List-Comprehension"><a href="#列表解析List-Comprehension" class="headerlink" title="列表解析List Comprehension"></a>列表解析List Comprehension</h3><ul>
+<li>语法<ul>
+<li>[返回值 for 元素 in 可迭代对象 if 条件]</li>
+<li>使用中括号[],内部是for循环，if条件语句可选</li>
+<li>返回一个新的列表  </li>
+</ul>
+</li>
+<li>列表解析是一种语法糖<ul>
+<li>编译器会优化，不会因为简写而影响效率，反而因优化提高了效率</li>
+<li>减少程序员工作量，减少出错</li>
+<li>简化了代码，增强了可读性</li>
+</ul>
+</li>
+</ul>
+<h3 id="列表解析进阶"><a href="#列表解析进阶" class="headerlink" title="列表解析进阶"></a>列表解析进阶</h3><ul>
+<li>[expr for in iterable1 for j in iterable2]<blockquote>
+<p>   In [2]: [(x,y) for x in ‘abcde’ for y in range(3)]<br>  Out[2]:<br>  [(‘a’, 0),(‘a’, 1),(‘a’, 2),(‘b’, 0),(‘b’, 1),(‘b’, 2),(‘c’, 0),(‘c’, 1),(‘c’, 2),(‘d’, 0),(‘d’, 1),(‘d’, 2),(‘e’, 0),(‘e’, 1),(‘e’, 2)]</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h3><ul>
+<li>特殊的对象，一定是可迭代对象，具备可迭代对象的特征</li>
+<li>通过iter方法把一个可迭代对象封装成迭代器</li>
+<li>通过next方法，迭代迭代器对象</li>
+<li>生成器对象，就是迭代器对象</li>
+</ul>
+<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><ul>
+<li>可迭代对象</li>
+<li>迭代器</li>
+</ul>
+<h4 id="生成器表达式Generrator-expression"><a href="#生成器表达式Generrator-expression" class="headerlink" title="生成器表达式Generrator expression"></a>生成器表达式Generrator expression</h4><ul>
+<li>语法<ul>
+<li>(返回值 for 元素 in 可迭代对象 if 条件)</li>
+<li>返回一个生成器</li>
+</ul>
+</li>
+<li>和列表解析式的对比<ul>
+<li>计算方式<ul>
+<li>生成器表达式是按需计算(或称惰性求值、延迟计算)，需要的时候才计算值，列表解析式立即计算，然后返回新的列表</li>
+</ul>
+</li>
+<li>内存占用<ul>
+<li>单从返回值本身来说，生成器表达式省内存</li>
+<li>生成器没有数据，内存占用极少，但是使用的时候，虽然一个个返回数据，但是合起来占用的内存跟列表解析式差不多</li>
+<li>列表解析式构用新的列表占用内存</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>计算速度<ul>
+<li>单看计算时间，生成器表达式耗时非常短，列表解析式耗时长</li>
+<li>生成器本身并没有返回任何值，只返回了一个生成器对象</li>
+<li>列表解析式构造并返回了新的列表</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -586,6 +642,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/05/17/Python函数（一）/" rel="prev" title="Python函数（一）">
+                Python函数（一） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -692,7 +752,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -780,7 +840,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性结构"><span class="nav-number">1.</span> <span class="nav-text">线性结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切片"><span class="nav-number">2.</span> <span class="nav-text">切片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封装和解构"><span class="nav-number">3.</span> <span class="nav-text">封装和解构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#解构"><span class="nav-number">3.1.</span> <span class="nav-text">解构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python3的解构"><span class="nav-number">3.2.</span> <span class="nav-text">Python3的解构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#丢弃变量"><span class="nav-number">4.</span> <span class="nav-text">丢弃变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合"><span class="nav-number">5.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本概念"><span class="nav-number">5.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#集合运算"><span class="nav-number">5.2.</span> <span class="nav-text">集合运算</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性结构"><span class="nav-number">1.</span> <span class="nav-text">线性结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#切片"><span class="nav-number">2.</span> <span class="nav-text">切片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#封装和解构"><span class="nav-number">3.</span> <span class="nav-text">封装和解构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#解构"><span class="nav-number">3.1.</span> <span class="nav-text">解构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Python3的解构"><span class="nav-number">3.2.</span> <span class="nav-text">Python3的解构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#丢弃变量"><span class="nav-number">4.</span> <span class="nav-text">丢弃变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合"><span class="nav-number">5.</span> <span class="nav-text">集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本概念"><span class="nav-number">5.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#集合运算"><span class="nav-number">5.2.</span> <span class="nav-text">集合运算</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表解析List-Comprehension"><span class="nav-number">6.</span> <span class="nav-text">列表解析List Comprehension</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表解析进阶"><span class="nav-number">7.</span> <span class="nav-text">列表解析进阶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迭代器"><span class="nav-number">8.</span> <span class="nav-text">迭代器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#生成器"><span class="nav-number">9.</span> <span class="nav-text">生成器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#生成器表达式Generrator-expression"><span class="nav-number">9.1.</span> <span class="nav-text">生成器表达式Generrator expression</span></a></li></ol></li></ol></div>
             
 
           </div>
